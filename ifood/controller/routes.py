@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request
 
-
 def init(instance: Flask):
     @instance.route('/')
     def index():

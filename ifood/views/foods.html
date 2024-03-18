@@ -1,11 +1,51 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    {{  }}
-</body>
-</html>
+
+{% extends 'base.html' %}
+{% block content %}
+{% include 'components/header/index.html' %}
+<section class="section-meals">
+    <h1 class="main-title">Cardápio</h1>
+    <div class="container grid grid--3-cols margin-right-md">
+      <div class="meal">
+        <img
+             src="https://github.com/erenburuk/html-css-course/blob/1aacbb283eed0f760ab9f905e4ad5099cfa11204/07-Omnifood-Desktop/img/meals/meal-1.jpg?raw=true"
+             class="meal-img"
+             alt="Comida 01"
+             />
+        <div class="meal-content">
+          <div class="meal-tags">
+            <span class="tag tag--vegetarian">Vegetarian</span>
+          </div>
+          <p class="meal-title">Comida 01</p>
+        </div>
+      </div>
+      <div class="meal">
+        <img
+             src="https://github.com/erenburuk/html-css-course/blob/main/07-Omnifood-Desktop/img/meals/meal-2.jpg?raw=true"
+             class="meal-img"
+             alt="Avocado Salad"
+             />
+        <div class="meal-content">
+          <div class="meal-tags">
+            <span class="tag tag--vegan">Vegan</span>
+            <span class="tag tag--paleo">Paleo</span>
+          </div>
+          <p class="meal-title">Comida 02</p>
+        </div>
+      </div>
+      <div class="meal">
+        <img
+             src="https://images.unsplash.com/photo-1455619452474-d2be8b1e70cd?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80"
+             class="meal-img"
+             alt="Comida 03"
+             />
+        <div class="meal-content">
+          <div class="meal-tags">
+            <span class="tag tag--vegan">Vegan</span>
+          </div>
+          <p class="meal-title">Comida 03</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+{% endblock content %}
